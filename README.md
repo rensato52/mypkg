@@ -1,4 +1,4 @@
-# robosys2023
+# mypkg
 [![test](https://github.com/rensato52/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/rensato52/mypkg/actions/workflows/test.yml)
 
 * ros2のパッケージリポジトリ
