@@ -10,7 +10,6 @@ class Talker():
         self.n = 0
         self.node = node
 
-        # タイマーを作成して0.5秒ごとにカウントと現在時刻をパブリッシュ
         node.create_timer(0.5, self.cb)
 
     def cb(self):
