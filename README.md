@@ -9,7 +9,6 @@
 $ git clone https://github.com/rensato52/mypkg.git
 ```
 
-## トピック
 ## リポジトリ内のノード
 ### talker.py
 * パブリッシャを持つノードで数字をカウントしてトピック`/countup`を通じて送信する.また，現在時刻をトピック`/current_time`を通じて送信する．
