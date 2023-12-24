@@ -64,7 +64,7 @@ $ ros2 branch run mypkg talk_listen.launch.py
 
 ## テスト環境
 * Ubuntu 20.04
-* ros2 foxy
+* ROS 2 foxy
 
 ## 著作権・ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
