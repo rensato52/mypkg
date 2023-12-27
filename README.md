@@ -4,9 +4,12 @@
 * ros2のパッケージリポジトリ
 * パブリッシャを持つノードtalker.pyが0.5秒ごとに現在時刻とカウントをパブリッシュし，listener.pyがそれらのメッセージを標準出力に表示する．
 ## インストール方法
-* ROS 2を動かすことのできる環境下で以下のコマンドを実行
+コマンドを実行
 ```bash
+$ mkdir -p ros2_ws/src
+$ cd ~/ros2_ws/src/
 $ git clone https://github.com/rensato52/mypkg.git
+$ cd mypkg
 ```
 
 ## リポジトリ内のノード
