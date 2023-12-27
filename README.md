@@ -40,7 +40,7 @@ $ git clone https://github.com/rensato52/mypkg.git
 
 * ros2 launchで実行
 ```bash
-$ ros2 launch run mypkg talk_listen.launch.py
+$ ros2 launch mypkg talk_listen.launch.py
 [INFO] [launch]: All log files can be found below /home/satoren/.ros/log/2023-12-24-19-42-53-488994-LAPTOP-T84RS2RQ-6312
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [talker-1]: process started with pid [6314]
