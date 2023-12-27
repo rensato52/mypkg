@@ -2,7 +2,7 @@
 [![test](https://github.com/rensato52/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/rensato52/mypkg/actions/workflows/test.yml)
 
 * ros2のパッケージリポジトリ
-* パブリッシャを持つノードtalker.pyが0.5秒ごとに現在時刻とカウントをパブリッシュし，listener.pyがそれらのトピックを標準出力に表示する．
+* パブリッシャを持つノードtalker.pyが0.5秒ごとに現在時刻とカウントをパブリッシュし，listener.pyがそれらのメッセージを標準出力に表示する．
 ## インストール方法
 * ROS 2を動かすことのできる環境下で以下のコマンドを実行
 ```bash
