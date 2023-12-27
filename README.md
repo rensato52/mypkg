@@ -2,24 +2,24 @@
 [![test](https://github.com/rensato52/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/rensato52/mypkg/actions/workflows/test.yml)
 
 * ros2のパッケージリポジトリ
-
+* パブリッシャを持つノードtalker.pyが0.5秒ごとに現在時刻とカウントをパブリッシュし，listener.pyがそれらのトピックを標準出力に表示する．
 ## インストール方法
-* 以下のコマンドを実行
+* ROS 2を動かすことのできる環境下で以下のコマンドを実行
 ```bash
 $ git clone https://github.com/rensato52/mypkg.git
 ```
 
 ## リポジトリ内のノード
 ### talker.py
-* パブリッシャを持つノードで数字をカウントしてトピック`/countup`を通じて送信する.また，現在時刻をトピック`/current_time`を通じて送信する．
-	* トピック`/countup`に流れるメッセージの型は16ビットの符号付き整数（Int16型）.
+* パブリッシャを持つノードで数字をカウントしてトピック`/countup`を通じて送信する．また，現在時刻をトピック`/current_time`を通じて送信する．
+	* トピック`/countup`に流れるメッセージの型は16ビットの符号付き整数（Int16型）．
 	* トピック`/current_time`に流れるメッセージの型は文字列を格納するための配列(String型）．
 
 ### listener.py
 * サブスクライバを持つノードでトピック`/countup`，`/current_time`からメッセージを受け取り表示する
 
 ## 実行例
-### ros2 runで実行　
+* ros2 runで実行　
 ```bash
 端末1$ ros2 run mypkg talker
 (何も表示されない）
@@ -38,9 +38,9 @@ $ git clone https://github.com/rensato52/mypkg.git
 `Ctrl+C`で終了
 ```
 
-### ros2 branchで実行
+* ros2 launchで実行
 ```bash
-$ ros2 branch run mypkg talk_listen.launch.py
+$ ros2 launch run mypkg talk_listen.launch.py
 [INFO] [launch]: All log files can be found below /home/satoren/.ros/log/2023-12-24-19-42-53-488994-LAPTOP-T84RS2RQ-6312
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [talker-1]: process started with pid [6314]
